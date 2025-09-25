@@ -1,0 +1,48 @@
+name: Bug Report
+description: Сообщить об ошибке в работе приложения GameStore
+title: "[Ошибка]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Спасибо за ваш отчет! Пожалуйста, заполните все разделы ниже максимально подробно. Это поможет нам быстрее исправить проблему.
+  - type: input
+    id: environment
+    attributes:
+      label: Среда выполнения
+      description: "Например, Windows 11 / Chrome 125"
+      placeholder: "ОС, браузер, версия..."
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Шаги воспроизведения
+      description: Четко опишите последовательность действий, приводящую к ошибке.
+      placeholder: |
+        1. Перейдите на страницу...
+        2. Нажмите кнопку...
+        3. Смотрите ошибку.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Ожидаемый результат
+      description: Что должно было произойти в соответствии с логикой приложения?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Фактический результат
+      description: Что произошло на самом деле?
+    validations:
+      required: true
+  - type: textarea
+    id: extras
+    attributes:
+      label: Скриншоты / Логи / Доп. материалы
+      description: Если возможно, приложите скриншоты, логи из консоли браузера или любые другие файлы, помогающие понять проблему.
+      placeholder: "Скриншоты можно перетащить в это поле."
